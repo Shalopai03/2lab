@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <script>
+            let x = parseFloat(prompt("Введите X:"));
+            let a = parseFloat(2.1);
+            let b = parseFloat(0.7);
+           
+            let Y;
+
+            if (x <= 0 && x > -2) {
+                Y = 1/(1+a*Math.abs(x));
+            } else if (x <= -2) {
+                Y = Math.cos(b*Math.pow(x,2))  + 0.5*x;
+            } else if (x>0) {
+                Y = Math.sqrt(1+ Math.exp(a*x));
+            }
+            alert("Решение функций: " + Y);
+        </script>
+</body>
+</html>
