@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <script>
+            let x = parseFloat(prompt("Введите X:"));
+            let a = parseFloat(2.1);
+            let b = parseFloat(0.7);
+           
+            let Y;
+
+            switch (x)
+            {
+                case 0: Y = 1/(1+a*Math.abs(x));
+                break;
+                case -2: Y = Math.cos(b*Math.pow(x,2))  + 0.5*x;
+                break;
+                case 1: Y = Math.sqrt(1+ Math.exp(a*x));
+                break;
+                default: Y = ("Нерешаемое");
+                break;
+            }
+            alert("Решение функций: " + Y);
+        </script>
+</body>
+</html> 
