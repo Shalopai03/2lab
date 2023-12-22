@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <script>
+            let number1 = parseFloat(prompt("Введите первое число:"));
+            let number2 = parseFloat(prompt("Введите второе число:"));
+            let number3 = parseFloat(prompt("Введите третье число:"));
+
+            let smallest;
+           
+            if (number1 <= number2 && number1 <= number3) {
+                smallest = number1;
+            } else if (number2 <= number1 && number2 <= number3) {
+                smallest = number2;
+            } else {
+                smallest = number3;
+            }
+            alert("Наименьшее число: " + smallest);
+        </script>
+</body>
+</html>
