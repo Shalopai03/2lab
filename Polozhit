@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <script>
+            let number1 = parseFloat(prompt("Введите первое число:"));
+            let number2 = parseFloat(prompt("Введите второе число:"));
+            let number3 = parseFloat(prompt("Введите третье число:"));
+
+            if (number1 > 0 && number2 > 0 && number3 > 0) {
+                alert("Все числа положительные.");
+            } else {
+                alert("Есть отрицательные числа или не числа.");
+            }
+        </script>
+</body>
+</html>
